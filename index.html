@@ -37,9 +37,12 @@
     <!-- REQUIRED: Google Font API -->
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
 
-        <!-- Bootstrap -->
+    <!-- Bootstrap -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
@@ -50,31 +53,33 @@
 
     <header class="py-3">
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#"><img src="images/logoAina.png" alt="Logo Image" width="70" height="70"></a>
-            <div class="container-fluid align-items-center d-flex">
-                <div class="ms-auto d-flex gap-3">
-                    <!-- Menu Links -->
-                    <a class="navLinks navbar-brand" href="#">About</a>
-                    <a class="navLinks navbar-brand" href="#">Portfolio</a>
-                    <a class="navLinks navbar-brand" href="#">Contact</a>
+            <div class="navbar-container">
+                <a class="navbar-brand" href="#hero">
+                    <img src="images/logoAina.png" alt="Logo Image" width="70" height="70">
+                </a>
 
+                <div class="nav-links-group">
+                    <a class="navLinks navbar-brand" href="#about">About</a>
+                    <a class="navLinks navbar-brand" href="#portfolio">Portfolio</a>
+                    <a class="navLinks navbar-brand" href="#contact">Contact</a>
                 </div>
-            </div> <!-- Container fluid div END-->
-
+            </div>
         </nav>
     </header>
+
     <!-- END of Header Section-->
 
     <!-- START of Hero Section (this is the SECTION BELOW TOP BANNER) -->
-    <section class="hero show-on-scoll globalPadding" id="hero">
+    <section class="hero globalPadding scroll-animate animate__animated" data-animate="animate__fadeInUp" id="hero">
         <div class="container text-start codeBox whiteFonts ">
             <h1 class="display-4"> <span class="pinkFonts"> Hello </span> World { </h1>
             <p class="last-para">
+                My name is Aina <br>
                 a <span class="text-type change-words" data-wait="3000"
                     data-words='["Developer", "Creator", "Philomath"]'></span>
             </p>
             <h1>}</h1>
-            <a href="#" class="btn btn-primary">View My Work</a>
+
         </div>
     </section>
 
@@ -83,10 +88,12 @@
 
 
     <!-- START of About Section -->
-    <section class="about whiteFonts show-on-scoll globalPadding" id="about">
-        <div class="about-container" <h2>About Me</h2>
+    <section class="about whiteFonts  globalPadding scroll-animate animate__animated" data-animate="animate__fadeInUp"
+        id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
             <div class=about-content-container>
-                <p><img src="images/gitHubProfileIMG.png" alt="Aina's Profile Image"></p>
+                <p><img src="images/profileIMG.png" alt="Aina's Profile Image"></p>
                 <p>
                     I am currently pursuing a Bachelor's degree in Creative Media, with a concentration in Video Game
                     Design and Development, at the University of Hawaii - West Oahu (UHWO). I am expected to graduate in
@@ -104,7 +111,41 @@
                 <div class="skills">
                     <!--  has inline two "buttons for hard skills and soft skills"; have your deisng for the intial project card here  -->
 
+                    <div class="skills-section scroll-animate animate__animated" data-animate="animate__fadeInUp">
+                        <div class="row justify-content-center gap-4">
+                      
+                          <!-- Soft Skills -->
+                          <div class="col-md-5 skill-card">
+                            <h3 class="skill-header">Soft Skills</h3>
+                            <ul class="skill-list">
+                              <li>Self-Motivated</li>
+                              <li> Dedicated</li>
+                              <li>Creativity</li>
+                              <li>Inquisitive</li>
+                              <li>Communication</li>
+                              <li>Attention to Detail</li>
+                            </ul>
+                          </div>
+                      
+                          <!-- Hard Skills -->
+                          <div class="col-md-5 skill-card">
+                            <h3 class="skill-header">Hard Skills</h3>
+                            <ul class="skill-list">
+                              <li>HTML / CSS / SCSS</li>
+                              <li>JavaScript / Python</li>
+                              <li> JQuery </li>
+                              <li>Bootstrap</li>
+                              <li>Figma / UI Design</li>
+                              <li>Git / GitHub</li>
+                              <li>Swift</li>
+                             <li>Love.Lua</li>
 
+                            </ul>
+                          </div>
+                      
+                        </div>
+                      </div>
+                      
 
                 </div>
             </div>
@@ -114,26 +155,28 @@
 
 
     <!-- START of Project Section -->
-    <section class="project" id="project">
+    <section class="project scroll-animate animate__animated" data-animate="animate__fadeInUp" id="portfolio">
         <h2>Projects</h2>
 
 
         <div class="projectCards-container d-flex flex-wrap justify-content-center gap-4">
-            <!-- START of Card 1-->
-            <a href="https://codepen.io/ko-d14/pen/NWdrjwW?editors=1100" class="project-tile text-decoration-none flex-grow-1" style="max-width: 300px;">
+            <!-- START of Card 1 PKA-->
+            <a href="https://codepen.io/ko-d14/pen/NWdrjwW?editors=1100"
+                class="project-tile text-decoration-none flex-grow-1" style="max-width: 300px;">
                 <div class="image-container">
-                    <img src="" alt="Project image of PKA"
-                        class="project-image">
+                    <img src="images/PKAHomepageIMG.png" alt="Project image of PKA" class="project-image">
                 </div>
-                <p class="caption"><span class="code">&lt;</span>PKA Undergraduate Research<span class="code">&#47;&gt;</span>
+                <p class="caption"><span class="code">&lt;</span>PKA Undergraduate Research<span
+                        class="code">&#47;&gt;</span>
                 </p>
             </a>
 
-            
 
-            <!-- START of Card 2 -->
 
-            <a href="https://codepen.io/ko-d14/pen/NWdrjwW?editors=1100" class="project-tile text-decoration-none flex-grow-1" style="max-width: 300px;">
+            <!-- START of Card 2 APPLE-->
+
+            <a href="https://codepen.io/ko-d14/pen/NWdrjwW?editors=1100"
+                class="project-tile text-decoration-none flex-grow-1" style="max-width: 300px;">
                 <div class="image-container">
                     <img src="images/appleLandingPageIMG.png" alt="Project image of Apple Landing Page"
                         class="project-image">
@@ -142,11 +185,11 @@
                 </p>
             </a>
 
-            <!-- START of Card 3 -->
-            <a href="https://codepen.io/ko-d14/pen/NWdrjwW?editors=1100" class="project-tile text-decoration-none flex-grow-1" style="max-width: 300px;">
+            <!-- START of Card 3 FCC SURVEY-->
+            <a href="https://codepen.io/ko-d14/pen/NWdrjwW?editors=1100"
+                class="project-tile text-decoration-none flex-grow-1" style="max-width: 300px;">
                 <div class="image-container">
-                    <img src="images/FCCSurveyIMG.png" alt="Project image of FCC Survey Form"
-                        class="project-image">
+                    <img src="images/FCCSurveyIMG.png" alt="Project image of FCC Survey Form" class="project-image">
                 </div>
                 <p class="caption"><span class="code">&lt;</span>Survey Form<span class="code">&#47;&gt;</span>
                 </p>
@@ -157,37 +200,38 @@
 
 
 
-   
-    <section class="contact-section ask-questions">
+
+    <section class="contact-section ask-question scroll-animate animate__animated" data-animate="animate__fadeInUp"
+        id="contact">
         <h2>Questions?</h2>
         <form class="contact-form">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-      
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-      
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
-      
-          <button type="submit">Send</button>
-        </form>
-      </section>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
 
-      
-    <footer class="footer-section">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+
+    <footer class="footer-section scroll-animate animate__animated" data-animate="animate__fadeInUp">
         <h2>Let's Work Together!</h2>
         <div class="social-icons d-flex flex-wrap justify-content-center flex-md-row flex-column gap-4">
-            <a href="#"><i class="bi bi-github"></i> Github</a>
-            <a href="#"><i class="bi bi-code-slash"></i> CodePen</a>
-            <a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a>
-            <a href="#"><i class="bi bi-envelope"></i> Email</a>
-          </div>
-          
+            <a href="https://github.com/KO-d14"><i class="bi bi-github"></i> Github</a>
+            <!-- <a href="#"><i class="bi bi-code-slash"></i> CodePen</a>-->
+            <a href="https://www.linkedin.com/in/aina-kodaira-4540a420b/"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            <a href="mailto:ainajk@hawaii.edu.com"><i class="bi bi-envelope"></i> Email</a>
+        </div>
 
-      
+
+
         <p>© 2025 | all rights reserved</p>
-      </footer>
+    </footer>
 
     <!-- REQUIRED: Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -195,6 +239,10 @@
         crossorigin="anonymous"></script>
     <script src="js/textEffects.js"></script>
 
+    <script src="scrollAnimation.js"></script>
+
+
 
 </body>
+
 </html>
