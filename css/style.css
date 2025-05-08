@@ -1,0 +1,360 @@
+/*
+This is the style.css which stores all the CSS styles for the website
+*/
+
+
+/*Global Styles*/
+
+html {
+    scroll-behavior: smooth;
+   }
+   
+.globalPadding {
+    padding: 80px 40px 80px 40px;
+}
+section {
+    padding: 80px 40px 80px 40px;
+}
+
+
+   /* TEXT STYLES */
+   
+   /* Text Colors */
+   .pinkFonts {
+       color: magenta;
+   }
+   
+   .whiteFonts{
+       color: white; 
+   }
+   
+   .cyanFonts{
+       color: cyan;
+   }
+   
+   
+   
+   header {
+       background: black;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: black;
+        width: 100%;
+    
+   }
+   
+/* ------------- Hero Section -------------*/
+
+ 
+
+   .navLinks {
+       color: white; 
+   }
+   
+   /*Sections */
+   
+   /* Hero Section */
+   .hero {
+       background: white;
+       padding: 15px
+   }
+   .codeBox { 
+       background: black; 
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+       padding: 20px;
+
+   
+   }
+   
+   .codeBox p {
+       margin-left: 20px;
+   }
+   /* About Section */
+   #about {
+       background: black;
+   }
+   
+   .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .about-content-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .about-content-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: white;
+  }
+  
+   
+   
+   
+   /* Text Hero Section TypeWriter Stylization */
+   .cursor {
+       animation: blink 0.7s infinite;
+   }
+   
+   @keyframes blink {
+     0%   { opacity: 1; }
+     50%  { opacity: 0; }
+     100% { opacity: 1; }
+   }
+   
+   
+   .text-type {
+       padding-top: 15px;
+       color: cyan;
+       font-size: 3rem;
+       margin-left: 10px;
+     }
+   
+     /* Creates fade effect when scrolling */
+     .show-on-scroll {
+       opacity: 0;
+       transform: translateY(20px);
+       transition: opacity 1.2s ease, transform 1.2s ease;
+     }
+     
+     .is-visible {
+       opacity: 1;
+       transform: none;
+     }
+   
+
+     /* Skills card */
+     
+
+     /* Project card */
+     .project-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 30px;
+        margin: 0 auto;
+       
+
+        max-width: 320px;
+        width: 100%;
+      
+        text-decoration: none;
+        background: white;
+        overflow: hidden;
+        word-wrap: break-word;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
+      }
+      
+      .project-tile {
+        box-shadow: 0 0 2px black;
+        display: flex;
+        flex-direction: column;
+        transition: all 1s ease;
+        width: 100%;
+  max-width: 320px;
+ 
+  
+  justify-content: space-between;
+  
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  text-decoration: none;
+  background: white;
+      
+      
+        &:hover {
+          letter-spacing: 3px;
+        }
+      }
+      
+      .image-container {
+        height: 290px;
+      
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      
+      .caption {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        height: 50px;
+        background: black;
+        color: white;
+        font-size: 1.2rem;
+        
+        padding: 10px;
+        background: #2d2e2d;
+        text-align: center;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        line-height: 1.5;
+        max-width: 100%;
+        white-space: normal;
+        width: 100%;
+        line-height: 1.4;
+        flex-shrink: 0;
+      
+        .code {
+          color: skyBlue;
+          margin: 0 5px;
+        }
+      }
+
+    
+      
+      .card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .card-body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+    /* ------------ Contact/Question Section -------------- */
+
+      
+      .contact-section {
+        background: black;
+        color: white;
+        text-align: center;
+        padding: 80px 20px;
+      }
+      
+      .contact-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+      }
+      
+      .contact-form {
+        max-width: 500px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .contact-form label {
+        font-weight: bold;
+        text-align: left;
+      }
+      
+      .contact-form input,
+      .contact-form textarea {
+        background: #ddd;
+        border: none;
+        padding: 12px;
+        font-size: 1rem;
+        width: 100%;
+      }
+      
+      .contact-form button {
+        background: green;
+        color: white;
+        font-weight: bold;
+        border: none;
+        padding: 12px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+      
+      .contact-form button:hover {
+        background: greenyellow;
+        color: black;
+      }
+      
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        flex-direction: row;
+      }
+      
+      @media (max-width: 768px) {
+        .social-icons {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+      
+        .social-icons a {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+      
+
+      /* ------------ Footer -------------- */
+      .footer-section {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+      }
+      
+      .footer-section h2 {
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+      
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+      }
+      
+      .social-icons a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      
+      .social-icons a:hover {
+        color: lightgreen;
+      }
+      
+      .footer-section hr {
+        width: 80%;
+        margin: 20px auto;
+        border: 1px solid white;
+      }
+      
+      .footer-section p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: white;
+      }
+      
